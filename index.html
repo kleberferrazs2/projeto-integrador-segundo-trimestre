@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Integrador IFA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,312 +19,254 @@
             </nav>
         </div>
     </header>
-    <!-- Copie e cole este bloco dentro do seu arquivo HTML -->
-<section class="programacao-section">
-  <div class="programacao-container">
-    <div class="programacao-header">
-      <h2>Como Funciona o Desenvolvimentos Web</h2>
-      <p>A tríade fundamental que dá vida a sites e aplicativos modernos.</p>
-    </div>
 
-    <!-- Cards das Linguagens -->
-    <div class="tech-cards">
-      <!-- HTML -->
-      <article class="tech-card html-card">
-        <div class="tech-icon">&lt;/&gt;</div>
-        <h3>HTML</h3>
-        <span class="tech-tag">A Estrutura</span>
-        <p>
-          O <strong>HTML</strong> (HyperText Markup Language) é o esqueleto do site. Ele define o conteúdo e a organização dos elementos na página, como títulos, parágrafos, imagens, botões e formulários.
-        </p>
-      </article>
+    <!-- Seção de Programação -->
+    <section id="programacao" class="programacao-section">
+        <div class="programacao-container">
+            <div class="programacao-header">
+                <h2>Como Funciona o Desenvolvimento Web</h2>
+                <p>A tríade fundamental que dá vida a sites e aplicativos modernos.</p>
+            </div>
 
-      <!-- CSS -->
-      <article class="tech-card css-card">
-        <div class="tech-icon">{ }</div>
-        <h3>CSS</h3>
-        <span class="tech-tag">O Estilo</span>
-        <p>
-          O <strong>CSS</strong> (Cascading Style Sheets) é a camada visual. Ele controla o design do site: cores, fontes, espaçamentos, layout e responsividade para celular e computador.
-        </p>
-      </article>
+            <div class="tech-cards">
+                <article class="tech-card html-card">
+                    <div class="tech-icon">&lt;/&gt;</div>
+                    <h3>HTML</h3>
+                    <span class="tech-tag">A Estrutura</span>
+                    <p>O <strong>HTML</strong> é o esqueleto do site. Ele define o conteúdo e a organização dos elementos na página, como títulos, parágrafos, imagens e botões.</p>
+                </article>
 
-      <!-- JavaScript -->
-      <article class="tech-card js-card">
-        <div class="tech-icon">JS</div>
-        <h3>JavaScript</h3>
-        <span class="tech-tag">A Interatividade</span>
-        <p>
-          O <strong>JavaScript</strong> é o cérebro da aplicação. Ele adiciona comportamento dinâmico e lógica, como animações, validação de dados, menus interativos e comunicação com servidores.
-        </p>
-      </article>
-    </div>
+                <article class="tech-card css-card">
+                    <div class="tech-icon">{ }</div>
+                    <h3>CSS</h3>
+                    <span class="tech-tag">O Estilo</span>
+                    <p>O <strong>CSS</strong> é a camada visual. Ele controla o design do site: cores, fontes, espaçamentos e responsividade para telas.</p>
+                </article>
 
-    <!-- Como Trabalham Juntos -->
-    <div class="trabalho-juntos">
-      <h3>Como eles trabalham juntos?</h3>
-      <p>
-        Imagine a criação de um site ou web app como a construção de um <strong>carro</strong>:
-      </p>
-      <ul class="analogia-list">
-        <li><strong>HTML:</strong> O chassi, as portas e a estrutura metálica do carro.</li>
-        <li><strong>CSS:</strong> A pintura, o estofamento dos bancos e o design da lataria.</li>
-        <li><strong>JavaScript:</strong> O motor, o sistema elétrico e os comandos do painel.</li>
-      </ul>
-      <p class="conclusao-text">
-        O navegador lê esses três arquivos em conjunto para transformar linhas de código em uma experiência funcional, rápida e agradável para o usuário.
-      </p>
-    </div>
-  </div>
-</section>
+                <article class="tech-card js-card">
+                    <div class="tech-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <span class="tech-tag">A Interatividade</span>
+                    <p>O <strong>JavaScript</strong> é o cérebro da aplicação. Ele adiciona comportamento dinâmico, animações e lógica à aplicação.</p>
+                </article>
+            </div>
 
-<div class="simulador-container">
-  <h3>Simulador Interativo: Lente Convergente</h3>
-  <p>Ajuste os controles para ver como a curvatura e o meio alteram a distância focal ($f$).</p>
-
-  <div class="canvas-wrapper">
-    <canvas id="lenteCanvas" width="700" height="300"></canvas>
-  </div>
-
-  <div class="controles-grid">
-    <div class="controle-item">
-      <label for="focoInput">Distância Focal ($f$): <span id="focoValor">150</span>px</label>
-      <input type="range" id="focoInput" min="50" max="250" value="150" step="5">
-    </div>
-
-    <div class="controle-item">
-      <label for="raiosInput">Quantidade de Raios: <span id="raiosValor">5</span></label>
-      <input type="range" id="raiosInput" min="3" max="11" value="5" step="2">
-    </div>
-  </div>
-</div>
-
-<!-- Seção: Experimento Roda de Newton com Arduino -->
-<section class="robotica-experimento">
-  <div class="robotica-container">
-    <div class="robotica-header">
-      <h2>Roda de Newton Automatizada</h2>
-      <p>Unindo óptica física, mecânica e programação com Arduino e Motor DC.</p>
-    </div>
-
-    <!-- Bloco Principal do Experimento -->
-    <div class="experimento-grid">
-      <div class="experimento-card">
-        <h3>O Conceito Físico</h3>
-        <p>
-          A Roda de Newton demonstra a <strong>síntese aditiva das cores</strong>. Um disco dividido nos sete componentes do espectro visível (Vermelho, Laranja, Amarelo, Verde, Azul, Anil e Violeta) é girado em alta velocidade.
-        </p>
-        <p>
-          Devido à <strong>persistência retiniana</strong> do olho humano (que retém imagens por cerca de 1/16 de segundo), o cérebro sobrepõe as cores refletidas rapidamente, resultando na percepção da cor branca (ou cinza claro).
-        </p>
-      </div>
-
-      <div class="experimento-card">
-        <h3>A Automação com Robótica</h3>
-        <p>
-          Em vez do acionamento manual tradicional, utilizamos a plataforma <strong>Arduino</strong> e um <strong>Motor DC</strong> para controle preciso de rotação (RPM).
-        </p>
-        <ul class="componentes-list">
-          <li><strong>Arduino Uno:</strong> Controla os sinais digitais e a velocidade.</li>
-          <li><strong>Motor DC (5V/12V):</strong> Executa a rotação do disco óptico.</li>
-          <li><strong>Driver Ponte H (L298N / Transistor BD139):</strong> Fornece a corrente necessária ao motor.</li>
-          <li><strong>Potenciômetro:</strong> Permite ao usuário ajustar a velocidade de rotação manualmente.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Como Funciona na Prática -->
-    <div class="passo-a-passo">
-      <h3>Como Funciona o Experimento</h3>
-      <div class="passos-grid">
-        <div class="passo-item">
-          <span class="passo-numero">1</span>
-          <h4>Sinal PWM</h4>
-          <p>O Arduino gera um sinal PWM (Pulse Width Modulation) para controlar a tensão entregue ao motor.</p>
+            <div class="trabalho-juntos">
+                <h3>Como eles trabalham juntos?</h3>
+                <p>Imagine a criação de um site como a construção de um <strong>carro</strong>:</p>
+                <ul class="analogia-list">
+                    <li><strong>HTML:</strong> O chassi, as portas e a estrutura metálica do carro.</li>
+                    <li><strong>CSS:</strong> A pintura, o estofamento e o design visual.</li>
+                    <li><strong>JavaScript:</strong> O motor, a parte elétrica e o painel de controle.</li>
+                </ul>
+            </div>
         </div>
-        <div class="passo-item">
-          <span class="passo-numero">2</span>
-          <h4>Aceleração</h4>
-          <p>Ao girar o potenciômetro, o motor aumenta os RPMs até atingir o limite de frequência crítica da visão.</p>
+    </section>
+
+    <!-- Seção de Física / Simulador -->
+    <section id="fisica" class="fisica-section">
+        <div class="simulador-container">
+            <h3>Simulador Interativo: Lente Convergente</h3>
+            <p>Ajuste os controles para ver como a curvatura altera a distância focal (f).</p>
+
+            <div class="canvas-wrapper">
+                <canvas id="lenteCanvas" width="700" height="300"></canvas>
+            </div>
+
+            <div class="controles-grid">
+                <div class="controle-item">
+                    <label for="focoInput">Distância Focal (f): <span id="focoValor">150</span>px</label>
+                    <input type="range" id="focoInput" min="50" max="250" value="150" step="5">
+                </div>
+
+                <div class="controle-item">
+                    <label for="raiosInput">Quantidade de Raios: <span id="raiosValor">5</span></label>
+                    <input type="range" id="raiosInput" min="3" max="11" value="5" step="2">
+                </div>
+            </div>
         </div>
-        <div class="passo-item">
-          <span class="passo-numero">3</span>
-          <h4>Fusão Óptica</h4>
-          <p>A partir de uma velocidade específica, as cores individuais "desaparecem" e a superfície aparenta ficar branca.</p>
+    </section>
+
+    <!-- Seção de Robótica -->
+    <section id="robotica" class="robotica-experimento">
+        <div class="robotica-container">
+            <div class="robotica-header">
+                <h2>Roda de Newton Automatizada</h2>
+                <p>Unindo óptica física, mecânica e programação com Arduino e Motor DC.</p>
+            </div>
+
+            <div class="experimento-grid">
+                <div class="experimento-card">
+                    <h3>O Conceito Físico</h3>
+                    <p>A Roda de Newton demonstra a <strong>síntese aditiva das cores</strong>. Um disco dividido no espectro visível é girado em alta velocidade.</p>
+                    <p>Devido à <strong>persistência retiniana</strong> do olho humano, o cérebro sobrepõe as cores, gerando a percepção da cor branca.</p>
+                </div>
+
+                <div class="experimento-card">
+                    <h3>A Automação com Robótica</h3>
+                    <p>Utilizamos o <strong>Arduino</strong> e um <strong>Motor DC</strong> para controle preciso de rotação.</p>
+                    <ul class="componentes-list">
+                        <li><strong>Arduino Uno:</strong> Controla os sinais digitais.</li>
+                        <li><strong>Motor DC:</strong> Executa a rotação do disco.</li>
+                        <li><strong>Driver Ponte H:</strong> Fornece a corrente necessária ao motor.</li>
+                        <li><strong>Potenciômetro:</strong> Ajusta a velocidade manualmente.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="passo-a-passo">
+                <h3>Como Funciona o Experimento</h3>
+                <div class="passos-grid">
+                    <div class="passo-item">
+                        <span class="passo-numero">1</span>
+                        <h4>Sinal PWM</h4>
+                        <p>O Arduino gera um sinal PWM para controlar a tensão entregue ao motor.</p>
+                    </div>
+                    <div class="passo-item">
+                        <span class="passo-numero">2</span>
+                        <h4>Aceleração</h4>
+                        <p>Ao girar o potenciômetro, o motor aumenta os RPMs até a velocidade ideal.</p>
+                    </div>
+                    <div class="passo-item">
+                        <span class="passo-numero">3</span>
+                        <h4>Fusão Óptica</h4>
+                        <p>As cores individuais se misturam e o disco aparenta ficar branco.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Seção: Entendendo HTML e CSS -->
-<section class="html-css-section">
-  <div class="html-css-container">
-    <div class="html-css-header">
-      <h2>Como Funciona o HTML e o CSS?</h2>
-      <p>Entenda o papel da linguagem de marcação e da linguagem de estilo na construção da Web.</p>
-    </div>
+    <!-- Seção: Entendendo HTML e CSS -->
+    <section class="html-css-section">
+        <div class="html-css-container">
+            <div class="html-css-header">
+                <h2>Detalhando HTML e CSS</h2>
+                <p>Entenda o papel de cada uma das tecnologias na Web.</p>
+            </div>
 
-    <!-- Comparação Lado a Lado -->
-    <div class="explicacao-grid">
-      <!-- Bloco HTML -->
-      <article class="explicacao-card html-border">
-        <div class="card-badge badge-html">&lt;HTML&gt;</div>
-        <h3>HTML: Estrutura e Marcadores</h3>
-        <p>
-          O <strong>HTML</strong> (HyperText Markup Language) não é uma linguagem de programação, mas sim de <strong>marcação</strong>. Ele utiliza <em>tags</em> para indicar ao navegador o que cada parte do texto representa.
-        </p>
-        <ul class="recursos-lista">
-          <li><strong>Tags principais:</strong> <code>&lt;h1&gt;</code> para títulos, <code>&lt;p&gt;</code> para parágrafos, <code>&lt;a&gt;</code> para links.</li>
-          <li><strong>Hierarquia:</strong> Organiza os elementos em árvore (DOM), definindo quem é elemento pai e quem é elemento filho.</li>
-          <li><strong>Semântica:</strong> Ajuda motores de busca (como o Google) a entender o significado do conteúdo na página.</li>
-        </ul>
-      </article>
+            <div class="explicacao-grid">
+                <article class="explicacao-card html-border">
+                    <div class="card-badge badge-html">&lt;HTML&gt;</div>
+                    <h3>HTML: Estrutura e Marcadores</h3>
+                    <p>O HTML utiliza <em>tags</em> para indicar ao navegador o que cada parte representa na página.</p>
+                </article>
 
-      <!-- Bloco CSS -->
-      <article class="explicacao-card css-border">
-        <div class="card-badge badge-css">{ CSS }</div>
-        <h3>CSS: Regras e Estilização</h3>
-        <p>
-          O <strong>CSS</strong> (Cascading Style Sheets) aplica regras visuais aos elementos criados pelo HTML. Ele funciona identificando o elemento (seletor) e declarando propriedades de estilo.
-        </p>
-        <ul class="recursos-lista">
-          <li><strong>Seletores:</strong> Apontam para as tags HTML por nome, classe (<code>.classe</code>) ou ID (<code>#id</code>).</li>
-          <li><strong>Cascata e Especificidade:</strong> As regras são aplicadas de cima para baixo; seletores mais específicos têm prioridade.</li>
-          <li><strong>Layouts Modernos:</strong> Utiliza recursos como <em>Flexbox</em> e <em>CSS Grid</em> para posicionamento e responsividade.</li>
-        </ul>
-      </article>
-    </div>
+                <article class="explicacao-card css-border">
+                    <div class="card-badge badge-css">{ CSS }</div>
+                    <h3>CSS: Regras e Estilização</h3>
+                    <p>O CSS aplica regras visuais aos elementos criados pelo HTML através de seletores e propriedades.</p>
+                </article>
+            </div>
 
-    <!-- Exemplo Prático de Código -->
-    <div class="exemplo-codigo">
-      <h3>Na Prática: Como se Conectam</h3>
-      <p>O HTML cria o elemento e o CSS altera sua aparência através da ligação no arquivo:</p>
-      
-      <div class="codigo-comparacao">
-        <div class="codigo-box">
-          <span class="codigo-titulo">Código HTML</span>
-          <pre><code>&lt;button class="meu-botao"&gt;
-  Clique Aqui
-&lt;/button&gt;</code></pre>
-        </div>
-        
-        <div class="codigo-box">
-          <span class="codigo-titulo">Código CSS</span>
-          <pre><code>.meu-botao {
+            <div class="exemplo-codigo">
+                <h3>Na Prática: Como se Conectam</h3>
+                <div class="codigo-comparacao">
+                    <div class="codigo-box">
+                        <span class="codigo-titulo">Código HTML</span>
+                        <pre><code>&lt;button class="meu-botao"&gt;Clique Aqui&lt;/button&gt;</code></pre>
+                    </div>
+                    <div class="codigo-box">
+                        <span class="codigo-titulo">Código CSS</span>
+                        <pre><code>.meu-botao {
   background-color: #0070f3;
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
 }</code></pre>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <script>
+        (function() {
+            const canvas = document.getElementById('lenteCanvas');
+            const ctx = canvas.getContext('2d');
 
-<script>
-(function() {
-  const canvas = document.getElementById('lenteCanvas');
-  const ctx = canvas.getContext('2d');
+            const focoInput = document.getElementById('focoInput');
+            const raiosInput = document.getElementById('raiosInput');
+            const focoValor = document.getElementById('focoValor');
+            const raiosValor = document.getElementById('raiosValor');
 
-  const focoInput = document.getElementById('focoInput');
-  const raiosInput = document.getElementById('raiosInput');
-  const focoValor = document.getElementById('focoValor');
-  const raiosValor = document.getElementById('raiosValor');
+            function desenhar() {
+                const f = parseInt(focoInput.value);
+                const numRaios = parseInt(raiosInput.value);
+                
+                focoValor.textContent = f;
+                raiosValor.textContent = numRaios;
 
-  function desenhar() {
-    const f = parseInt(focoInput.value);
-    const numRaios = parseInt(raiosInput.value);
-    
-    focoValor.textContent = f;
-    raiosValor.textContent = numRaios;
+                const width = canvas.width;
+                const height = canvas.height;
+                const centroX = width / 2;
+                const centroY = height / 2;
 
-    const width = canvas.width;
-    const height = canvas.height;
-    const centroX = width / 2;
-    const centroY = height / 2;
+                ctx.clearRect(0, 0, width, height);
 
-    // Limpar Canvas
-    ctx.clearRect(0, 0, width, height);
+                ctx.beginPath();
+                ctx.setLineDash([5, 5]);
+                ctx.strokeStyle = '#475569';
+                ctx.lineWidth = 1;
+                ctx.moveTo(0, centroY);
+                ctx.lineTo(width, centroY);
+                ctx.stroke();
+                ctx.setLineDash([]);
 
-    // Eixo Óptico Principal (Linha tracejada)
-    ctx.beginPath();
-    ctx.setLineDash([5, 5]);
-    ctx.strokeStyle = '#475569';
-    ctx.lineWidth = 1;
-    ctx.moveTo(0, centroY);
-    ctx.lineTo(width, centroY);
-    ctx.stroke();
-    ctx.setLineDash([]); // Reset linha contínua
+                const focoX = centroX + f;
+                ctx.beginPath();
+                ctx.arc(focoX, centroY, 5, 0, Math.PI * 2);
+                ctx.fillStyle = '#ff4d6d';
+                ctx.fill();
+                ctx.font = '12px sans-serif';
+                ctx.fillText('F (Foco)', focoX - 20, centroY + 20);
 
-    // Desenhar Foco (Ponto F)
-    const focoX = centroX + f;
-    ctx.beginPath();
-    ctx.arc(focoX, centroY, 5, 0, Math.PI * 2);
-    ctx.fillStyle = '#ff4d6d';
-    ctx.fill();
-    ctx.font = '12px sans-serif';
-    ctx.fillStyle = '#ff4d6d';
-    ctx.fillText('F (Foco)', focoX - 20, centroY + 20);
+                ctx.beginPath();
+                ctx.lineWidth = 3;
+                ctx.strokeStyle = '#38bdf8';
+                ctx.fillStyle = 'rgba(56, 189, 248, 0.15)';
+                
+                const curvatura = Math.max(15, 60 - (f / 5)); 
+                const alturaLente = 100;
 
-    // Desenhar Lente Convergente (Formato biconvexo simplificado)
-    ctx.beginPath();
-    ctx.lineWidth = 3;
-    ctx.strokeStyle = '#38bdf8';
-    ctx.fillStyle = 'rgba(56, 189, 248, 0.15)';
-    
-    // Curvatura dinâmica baseada na distância focal
-    const curvatura = Math.max(15, 60 - (f / 5)); 
-    const alturaLente = 100;
+                ctx.moveTo(centroX, centroY - alturaLente);
+                ctx.quadraticCurveTo(centroX + curvatura, centroY, centroX, centroY + alturaLente);
+                ctx.quadraticCurveTo(centroX - curvatura, centroY, centroX, centroY - alturaLente);
+                ctx.fill();
+                ctx.stroke();
 
-    ctx.moveTo(centroX, centroY - alturaLente);
-    ctx.quadraticCurveTo(centroX + curvatura, centroY, centroX, centroY + alturaLente);
-    ctx.quadraticCurveTo(centroX - curvatura, centroY, centroX, centroY - alturaLente);
-    ctx.fill();
-    ctx.stroke();
+                const espacamento = (alturaLente * 1.5) / (numRaios - 1 || 1);
+                const inicioY = centroY - (alturaLente * 0.75);
 
-    // Desenhar Raios de Luz
-    const espacamento = (alturaLente * 1.5) / (numRaios - 1 || 1);
-    const inicioY = centroY - (alturaLente * 0.75);
+                for (let i = 0; i < numRaios; i++) {
+                    const y = inicioY + (i * espacamento);
 
-    for (let i = 0; i < numRaios; i++) {
-      const y = inicioY + (i * espacamento);
+                    ctx.beginPath();
+                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = '#f7df1e';
 
-      ctx.beginPath();
-      ctx.lineWidth = 2;
-      ctx.strokeStyle = '#f7df1e'; // Cor amarela para os raios
+                    ctx.moveTo(0, y);
+                    ctx.lineTo(centroX, y);
 
-      // 1. Raio Incidente (Paralelo ao eixo)
-      ctx.moveTo(0, y);
-      ctx.lineTo(centroX, y);
+                    const inclinacao = (centroY - y) / (focoX - centroX);
+                    const fimX = width;
+                    const fimY = y + inclinacao * (fimX - centroX);
 
-      // 2. Raio Refratado (Passa pelo Foco)
-      // Equação da reta passando por (centroX, y) e (focoX, centroY)
-      const inclinacao = (centroY - y) / (focoX - centroX);
-      const fimX = width;
-      const fimY = y + inclinacao * (fimX - centroX);
+                    ctx.lineTo(fimX, fimY);
+                    ctx.stroke();
 
-      ctx.lineTo(fimX, fimY);
-      ctx.stroke();
+                    ctx.beginPath();
+                    ctx.fillStyle = '#f7df1e';
+                    ctx.arc(centroX / 2, y, 3, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
 
-      // Seta indicativa no raio
-      ctx.beginPath();
-      ctx.fillStyle = '#f7df1e';
-      ctx.arc(centroX / 2, y, 3, 0, Math.PI * 2);
-      ctx.fill();
-    }
-  }
+            focoInput.addEventListener('input', desenhar);
+            raiosInput.addEventListener('input', desenhar);
 
-  focoInput.addEventListener('input', desenhar);
-  raiosInput.addEventListener('input', desenhar);
-
-  // Inicializar
-  desenhar();
-})();
-</script>
-
+            desenhar();
+        })();
+    </script>
 </body>
 
 </html>
